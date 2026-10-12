@@ -1,0 +1,95 @@
+{
+  "name": "terminal-pet",
+  "version": "0.9.0",
+  "description": "A hand-drawn pixel-art pet that lives in the terminal and reacts to what Claude is doing. Comes with /pixel-pet, a skill for drawing your own pets.",
+  "author": {
+    "name": "BMNHunter",
+    "url": "https://github.com/BMNHunter"
+  },
+  "keywords": [
+    "pet",
+    "pixel-art",
+    "terminal",
+    "fun"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "visible": {
+      "type": "boolean",
+      "title": "Pet: show",
+      "description": "Show the pet. /pet alone toggles it.",
+      "default": true
+    },
+    "pet": {
+      "type": "string",
+      "title": "Pet: which pet",
+      "description": "The pet to show, by its key: shiro, or one you drew with /pixel-pet. /pet list shows them, /pet <name> switches.",
+      "default": "shiro"
+    },
+    "placement": {
+      "type": "string",
+      "title": "Pet: placement",
+      "description": "corner: a narrow pane beside the conversation, the pet standing in its bottom corner (it docks in the fullscreen layout; elsewhere it is a small block above the prompt). band: a row above the prompt.",
+      "default": "corner",
+      "options": [
+        "corner",
+        "band"
+      ]
+    },
+    "side": {
+      "type": "string",
+      "title": "Pet: side above the prompt",
+      "description": "Where the pet stands in the row above the prompt (band placement).",
+      "default": "right",
+      "options": [
+        "right",
+        "left",
+        "center"
+      ]
+    },
+    "size": {
+      "type": "string",
+      "title": "Pet: size",
+      "description": "auto takes the largest that fits. Every size steps down (big, small, head) when the room is short.",
+      "default": "auto",
+      "options": [
+        "auto",
+        "big",
+        "small",
+        "head"
+      ]
+    },
+    "clothes": {
+      "type": "boolean",
+      "title": "Pet: clothes",
+      "description": "Dress the pet in its outfit, when it has one.",
+      "default": true
+    },
+    "tricks": {
+      "type": "string",
+      "title": "Pet: dagger tricks",
+      "description": "When the pet plays with its dagger: toss and twirl while Claude works, a toss (and now and then a fumble) every 30 seconds while idle, both, or off. Off also narrows the side pane.",
+      "default": "both",
+      "options": [
+        "both",
+        "working",
+        "idle",
+        "off"
+      ]
+    },
+    "hideFrame": {
+      "type": "boolean",
+      "title": "Pet: hide the side pane frame",
+      "description": "Paint over the side pane's top and bottom edge, close mark and divider in the pane background, and ask for a pane just as wide as the pet (with room for the dagger while tricks are on).",
+      "default": true
+    },
+    "background": {
+      "type": "string",
+      "title": "Pet: side pane background",
+      "description": "The colour that fills the side pane, as #rrggbb: your terminal's background, so the pane blends in. Empty keeps the pane's own grey.",
+      "default": "#0c0c0c"
+    }
+  },
+  "homepage": "https://github.com/BMNHunter/Terminal-Pets",
+  "repository": "https://github.com/BMNHunter/Terminal-Pets"
+}

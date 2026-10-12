@@ -1,0 +1,38 @@
+{
+  "name": "Shiro",
+  "toss": {
+    "_note": "dagger toss: where the dagger sits in the hand and the top of its arc, in sprite pixels (row, column); widen adds empty columns on the right for the arc",
+    "small": {
+      "hand": [
+        24,
+        18
+      ],
+      "peak": [
+        5,
+        25
+      ],
+      "blade": 3,
+      "hilt": 1,
+      "widen": 6
+    },
+    "big": {
+      "hand": [
+        54,
+        37
+      ],
+      "peak": [
+        10,
+        51
+      ],
+      "blade": 6,
+      "hilt": 2,
+      "widen": 12
+    }
+  },
+  "twitch": {
+    "_note": "rows of the ear tuft that flick in an ear twitch",
+    "big": 4,
+    "small": 2,
+    "head": 2
+  }
+}

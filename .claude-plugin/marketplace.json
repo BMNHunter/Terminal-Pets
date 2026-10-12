@@ -1,0 +1,15 @@
+{
+  "name": "terminal-pet",
+  "owner": {
+    "name": "BMNHunter",
+    "url": "https://github.com/BMNHunter"
+  },
+  "description": "Terminal pets for Claude Code: Shiro the lynx, and a skill to draw your own.",
+  "plugins": [
+    {
+      "name": "terminal-pet",
+      "source": "./",
+      "description": "A hand-drawn pixel-art pet that lives in the terminal and reacts to what Claude is doing. Comes with /pixel-pet, a skill for drawing your own pets."
+    }
+  ]
+}
